@@ -33,7 +33,7 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         txt_password = new javax.swing.JPasswordField();
-        pass = new javax.swing.JCheckBox();
+        checkPass = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -91,18 +91,18 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(txt_password);
         txt_password.setBounds(200, 200, 190, 40);
 
-        pass.setText("Afficher le mot de passe");
-        pass.addActionListener(new java.awt.event.ActionListener() {
+        checkPass.setText("Afficher le mot de passe");
+        checkPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passActionPerformed(evt);
+                checkPassActionPerformed(evt);
             }
         });
-        getContentPane().add(pass);
-        pass.setBounds(420, 210, 150, 23);
+        getContentPane().add(checkPass);
+        checkPass.setBounds(420, 210, 170, 23);
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 10, 10);
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 0, 100, 100);
+        jPanel2.setBounds(0, 0, 10, 10);
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 0, 590, 410);
 
@@ -140,9 +140,15 @@ public class Login extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
-        
-    }//GEN-LAST:event_passActionPerformed
+    private void checkPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkPassActionPerformed
+        if (checkPass.isSelected()) {
+            txt_password.setEchoChar((char)0);
+        }
+        else{
+            txt_password.setEchoChar('*');
+        }
+                     
+    }//GEN-LAST:event_checkPassActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,6 +186,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox checkPass;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -188,7 +195,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JCheckBox pass;
     private javax.swing.JPasswordField txt_password;
     private javax.swing.JTextField txt_username;
     // End of variables declaration//GEN-END:variables

@@ -131,16 +131,16 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="pass">
+    <Component class="javax.swing.JCheckBox" name="checkPass">
       <Properties>
         <Property name="text" type="java.lang.String" value="Afficher le mot de passe"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="passActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkPassActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="420" y="210" width="150" height="-1"/>
+          <AbsoluteConstraints x="420" y="210" width="170" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

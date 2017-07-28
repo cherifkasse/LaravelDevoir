@@ -79,6 +79,7 @@ public class Livre extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         nbreLivr = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -271,6 +272,8 @@ public class Livre extends javax.swing.JFrame {
         jLabel2.setBounds(440, 480, 130, 20);
         getContentPane().add(nbreLivr);
         nbreLivr.setBounds(580, 480, 70, 30);
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, 0, 100, 100);
 
         setSize(new java.awt.Dimension(812, 656));
         setLocationRelativeTo(null);
@@ -463,6 +466,7 @@ public class Livre extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton modifierLivre;
     private javax.swing.JTextField nbreLivr;

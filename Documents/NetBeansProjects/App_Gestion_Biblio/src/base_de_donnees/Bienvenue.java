@@ -4,18 +4,20 @@
  * and open the template in the editor.
  */
 package base_de_donnees;
+
 import java.util.*;
+import java.sql.*;
 /**
  *
  * @author cherif
  */
 public class Bienvenue extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Bienvenue
-     */
+   Thread m;
     public Bienvenue() {
         initComponents();
+        m=new Thread(new TraitementHeure());
+        m.start();
     }
 
     /**
@@ -33,8 +35,7 @@ public class Bienvenue extends javax.swing.JFrame {
         emprunt = new javax.swing.JButton();
         Retour = new javax.swing.JButton();
         quitter = new javax.swing.JButton();
-        Date = new javax.swing.JLabel();
-        heure = new javax.swing.JLabel();
+        temp = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -43,7 +44,7 @@ public class Bienvenue extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Calibri", 2, 18)); // NOI18N
         jLabel1.setText("            GESTION DE BIBILOTHEQUE");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(220, 0, 260, 56);
+        jLabel1.setBounds(220, 20, 260, 56);
 
         lecteur.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lecteur.setText("LECTEURS");
@@ -96,10 +97,10 @@ public class Bienvenue extends javax.swing.JFrame {
         });
         getContentPane().add(quitter);
         quitter.setBounds(580, 460, 100, 30);
-        getContentPane().add(Date);
-        Date.setBounds(434, 4, 200, 30);
-        getContentPane().add(heure);
-        heure.setBounds(0, 0, 110, 30);
+
+        temp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        getContentPane().add(temp);
+        temp.setBounds(600, 0, 100, 20);
 
         setSize(new java.awt.Dimension(716, 539));
         setLocationRelativeTo(null);
@@ -169,13 +170,33 @@ public class Bienvenue extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Date;
     private javax.swing.JButton Retour;
     private javax.swing.JButton emprunt;
-    private javax.swing.JLabel heure;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton lecteur;
     private javax.swing.JButton livre;
     private javax.swing.JButton quitter;
+    private javax.swing.JLabel temp;
     // End of variables declaration//GEN-END:variables
+
+    class TraitementHeure implements Runnable{
+        Boolean bool=true;
+        public void run(){
+            while(bool){
+                Time heure;
+                heure=new Time(0);
+                heure.setTime(System.currentTimeMillis());
+                temp.setText(""+heure);
+                try {
+                    m.sleep(1000);
+                } catch (Exception e) {
+                }
+            }
+        }
+    
+}
+  
+    
+    
+    
 }

@@ -18,6 +18,7 @@ public class Bienvenue extends javax.swing.JFrame {
         initComponents();
         m=new Thread(new TraitementHeure());
         m.start();
+        clock();
     }
 
     /**
@@ -36,16 +37,21 @@ public class Bienvenue extends javax.swing.JFrame {
         Retour = new javax.swing.JButton();
         quitter = new javax.swing.JButton();
         temp = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        datee = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 204, 0));
         getContentPane().setLayout(null);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 51));
-        jLabel1.setFont(new java.awt.Font("Calibri", 2, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Calibri", 3, 18)); // NOI18N
         jLabel1.setText("            GESTION DE BIBILOTHEQUE");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(220, 20, 260, 56);
 
+        lecteur.setBackground(new java.awt.Color(0, 204, 204));
         lecteur.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lecteur.setText("LECTEURS");
         lecteur.addActionListener(new java.awt.event.ActionListener() {
@@ -54,8 +60,9 @@ public class Bienvenue extends javax.swing.JFrame {
             }
         });
         getContentPane().add(lecteur);
-        lecteur.setBounds(270, 150, 190, 40);
+        lecteur.setBounds(80, 130, 190, 40);
 
+        livre.setBackground(new java.awt.Color(0, 204, 204));
         livre.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         livre.setText("LIVRES");
         livre.addActionListener(new java.awt.event.ActionListener() {
@@ -64,8 +71,9 @@ public class Bienvenue extends javax.swing.JFrame {
             }
         });
         getContentPane().add(livre);
-        livre.setBounds(270, 220, 190, 40);
+        livre.setBounds(80, 200, 190, 40);
 
+        emprunt.setBackground(new java.awt.Color(0, 204, 204));
         emprunt.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         emprunt.setText("EMPRUNTS");
         emprunt.addActionListener(new java.awt.event.ActionListener() {
@@ -74,9 +82,9 @@ public class Bienvenue extends javax.swing.JFrame {
             }
         });
         getContentPane().add(emprunt);
-        emprunt.setBounds(270, 290, 190, 40);
+        emprunt.setBounds(80, 270, 190, 40);
 
-        Retour.setBackground(new java.awt.Color(0, 51, 255));
+        Retour.setBackground(new java.awt.Color(51, 0, 255));
         Retour.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         Retour.setText("Retour");
         Retour.addActionListener(new java.awt.event.ActionListener() {
@@ -98,9 +106,22 @@ public class Bienvenue extends javax.swing.JFrame {
         getContentPane().add(quitter);
         quitter.setBounds(580, 460, 100, 30);
 
-        temp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        temp.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         getContentPane().add(temp);
-        temp.setBounds(600, 0, 100, 20);
+        temp.setBounds(620, 0, 80, 20);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/53748.png"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(350, 60, 310, 350);
+
+        jPanel1.setLayout(null);
+
+        datee.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jPanel1.add(datee);
+        datee.setBounds(0, 0, 140, 20);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 700, 500);
 
         setSize(new java.awt.Dimension(716, 539));
         setLocationRelativeTo(null);
@@ -171,8 +192,11 @@ public class Bienvenue extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Retour;
+    private javax.swing.JLabel datee;
     private javax.swing.JButton emprunt;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton lecteur;
     private javax.swing.JButton livre;
     private javax.swing.JButton quitter;
@@ -195,6 +219,14 @@ public class Bienvenue extends javax.swing.JFrame {
         }
     
 }
+    public void clock(){
+        Calendar cal =new GregorianCalendar();
+        int jour=cal.get(Calendar.DAY_OF_MONTH);
+        int mois=cal.get(Calendar.MONTH);
+        int an=cal.get(Calendar.YEAR);
+        datee.setText(jour+"/"+mois+"/"+an);
+        
+    }
   
     
     

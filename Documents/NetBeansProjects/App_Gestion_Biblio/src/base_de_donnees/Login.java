@@ -36,7 +36,7 @@ public class Login extends javax.swing.JFrame {
         checkPass = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 255));
@@ -51,12 +51,12 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("Nom d'utilisateur :");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 119, 145, 22);
+        jLabel2.setBounds(10, 250, 145, 22);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setText("Mot de passe :");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 213, 117, 22);
+        jLabel3.setBounds(10, 340, 117, 22);
 
         txt_username.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txt_username.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +65,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txt_username);
-        txt_username.setBounds(200, 110, 190, 40);
+        txt_username.setBounds(190, 240, 190, 40);
 
         jButton1.setBackground(new java.awt.Color(0, 0, 255));
         jButton1.setText("Connexion");
@@ -75,7 +75,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(40, 330, 90, 30);
+        jButton1.setBounds(40, 460, 90, 30);
 
         jButton2.setBackground(new java.awt.Color(0, 0, 255));
         jButton2.setText("Quitter");
@@ -87,10 +87,12 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(460, 330, 100, 30);
+        jButton2.setBounds(460, 460, 100, 30);
         getContentPane().add(txt_password);
-        txt_password.setBounds(200, 200, 190, 40);
+        txt_password.setBounds(190, 330, 190, 40);
 
+        checkPass.setBackground(new java.awt.Color(51, 51, 255));
+        checkPass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         checkPass.setText("Afficher le mot de passe");
         checkPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,15 +100,17 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(checkPass);
-        checkPass.setBounds(420, 210, 170, 23);
+        checkPass.setBounds(390, 340, 140, 25);
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 10, 10);
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 10, 10);
-        getContentPane().add(jPanel3);
-        jPanel3.setBounds(0, 0, 590, 410);
 
-        setSize(new java.awt.Dimension(608, 446));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/login-374x374_2.png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(160, 20, 580, 510);
+
+        setSize(new java.awt.Dimension(608, 548));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -192,9 +196,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField txt_password;
     private javax.swing.JTextField txt_username;
     // End of variables declaration//GEN-END:variables

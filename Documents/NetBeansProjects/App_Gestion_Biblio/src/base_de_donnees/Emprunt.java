@@ -79,7 +79,7 @@ public class Emprunt extends javax.swing.JFrame {
         rendre = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
-        nbreEmp = new javax.swing.JTextField();
+        nbreEmp = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -125,6 +125,7 @@ public class Emprunt extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(12, 50, 770, 90);
 
+        ajouterEmp.setBackground(new java.awt.Color(48, 222, 240));
         ajouterEmp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ajouterEmp.setText("Ajouter");
         ajouterEmp.addActionListener(new java.awt.event.ActionListener() {
@@ -135,6 +136,7 @@ public class Emprunt extends javax.swing.JFrame {
         getContentPane().add(ajouterEmp);
         ajouterEmp.setBounds(70, 190, 120, 30);
 
+        modifierEmp.setBackground(new java.awt.Color(48, 222, 240));
         modifierEmp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         modifierEmp.setText("Modifier");
         modifierEmp.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +147,7 @@ public class Emprunt extends javax.swing.JFrame {
         getContentPane().add(modifierEmp);
         modifierEmp.setBounds(190, 190, 120, 30);
 
+        supprimerEmp.setBackground(new java.awt.Color(48, 222, 240));
         supprimerEmp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         supprimerEmp.setText("Supprimer");
         supprimerEmp.addActionListener(new java.awt.event.ActionListener() {
@@ -155,6 +158,7 @@ public class Emprunt extends javax.swing.JFrame {
         getContentPane().add(supprimerEmp);
         supprimerEmp.setBounds(310, 190, 120, 30);
 
+        actualiserEmp.setBackground(new java.awt.Color(48, 222, 240));
         actualiserEmp.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         actualiserEmp.setText("Actualiser");
         actualiserEmp.addActionListener(new java.awt.event.ActionListener() {
@@ -191,6 +195,7 @@ public class Emprunt extends javax.swing.JFrame {
         getContentPane().add(txt_DateEmp);
         txt_DateEmp.setBounds(120, 400, 210, 30);
 
+        BoutonRechEmp.setBackground(new java.awt.Color(54, 211, 240));
         BoutonRechEmp.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         BoutonRechEmp.setText("Rchercher ");
         BoutonRechEmp.addActionListener(new java.awt.event.ActionListener() {
@@ -277,6 +282,7 @@ public class Emprunt extends javax.swing.JFrame {
         getContentPane().add(txt_namelect);
         txt_namelect.setBounds(120, 360, 210, 30);
 
+        rendre.setBackground(new java.awt.Color(48, 222, 240));
         rendre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         rendre.setText("Rendu");
         rendre.addActionListener(new java.awt.event.ActionListener() {
@@ -295,14 +301,8 @@ public class Emprunt extends javax.swing.JFrame {
         jLabel11.setText("Nbre d'emprunts");
         getContentPane().add(jLabel11);
         jLabel11.setBounds(420, 480, 120, 20);
-
-        nbreEmp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nbreEmpActionPerformed(evt);
-            }
-        });
         getContentPane().add(nbreEmp);
-        nbreEmp.setBounds(570, 470, 70, 30);
+        nbreEmp.setBounds(570, 480, 60, 30);
 
         setSize(new java.awt.Dimension(812, 659));
         setLocationRelativeTo(null);
@@ -484,10 +484,6 @@ public class Emprunt extends javax.swing.JFrame {
             actualiser();
         }
     }//GEN-LAST:event_rendreActionPerformed
-
-    private void nbreEmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nbreEmpActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nbreEmpActionPerformed
    
     /**
      * @param args the command line arguments
@@ -544,7 +540,7 @@ public class Emprunt extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton modifierEmp;
-    private javax.swing.JTextField nbreEmp;
+    private javax.swing.JLabel nbreEmp;
     private javax.swing.JButton quiiter;
     private javax.swing.JButton rendre;
     private javax.swing.JButton supprimerEmp;

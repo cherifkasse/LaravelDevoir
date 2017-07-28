@@ -69,7 +69,7 @@ public class Lecteur extends javax.swing.JFrame {
         quiiter = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        nbreLivre = new javax.swing.JTextField();
+        nbreLivre = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -80,6 +80,7 @@ public class Lecteur extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(260, 0, 220, 39);
 
+        ajouter.setBackground(new java.awt.Color(65, 255, 214));
         ajouter.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ajouter.setText("Ajouter");
         ajouter.addActionListener(new java.awt.event.ActionListener() {
@@ -90,6 +91,7 @@ public class Lecteur extends javax.swing.JFrame {
         getContentPane().add(ajouter);
         ajouter.setBounds(150, 190, 120, 30);
 
+        modifier.setBackground(new java.awt.Color(65, 255, 214));
         modifier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         modifier.setText("Modifier");
         modifier.addActionListener(new java.awt.event.ActionListener() {
@@ -100,6 +102,7 @@ public class Lecteur extends javax.swing.JFrame {
         getContentPane().add(modifier);
         modifier.setBounds(270, 190, 120, 30);
 
+        supprimer.setBackground(new java.awt.Color(65, 255, 214));
         supprimer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         supprimer.setText("Supprimer");
         supprimer.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +113,7 @@ public class Lecteur extends javax.swing.JFrame {
         getContentPane().add(supprimer);
         supprimer.setBounds(390, 190, 120, 30);
 
+        actualiser.setBackground(new java.awt.Color(65, 255, 214));
         actualiser.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         actualiser.setText("Actualiser");
         actualiser.addActionListener(new java.awt.event.ActionListener() {
@@ -155,6 +159,7 @@ public class Lecteur extends javax.swing.JFrame {
         getContentPane().add(adresseLect);
         adresseLect.setBounds(110, 460, 210, 30);
 
+        recherche.setBackground(new java.awt.Color(48, 234, 240));
         recherche.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         recherche.setText("Rchercher ");
         recherche.addActionListener(new java.awt.event.ActionListener() {
@@ -255,14 +260,8 @@ public class Lecteur extends javax.swing.JFrame {
         jLabel9.setText("Nbre d'abonnés");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(400, 470, 150, 30);
-
-        nbreLivre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nbreLivreActionPerformed(evt);
-            }
-        });
         getContentPane().add(nbreLivre);
-        nbreLivre.setBounds(570, 470, 70, 30);
+        nbreLivre.setBounds(570, 470, 60, 30);
 
         setSize(new java.awt.Dimension(784, 666));
         setLocationRelativeTo(null);
@@ -371,10 +370,6 @@ public class Lecteur extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_quiiterActionPerformed
 
-    private void nbreLivreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nbreLivreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nbreLivreActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -430,7 +425,7 @@ public class Lecteur extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField mailLect;
     private javax.swing.JButton modifier;
-    private javax.swing.JTextField nbreLivre;
+    private javax.swing.JLabel nbreLivre;
     private javax.swing.JTextField nomLect;
     private javax.swing.JTextField prenomLect;
     private javax.swing.JButton quiiter;

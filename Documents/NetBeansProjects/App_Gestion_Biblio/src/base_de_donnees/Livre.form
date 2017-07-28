@@ -73,6 +73,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="ajouterLivre">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="e0" red="42" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -89,6 +92,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="modifierLivre">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="e0" red="42" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -105,6 +111,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="supprimerLivre">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="e0" red="42" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -121,6 +130,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="actualiserLivre">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="e0" red="42" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -210,6 +222,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="BoutonRechLivre">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="da" red="40" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
         </Property>
@@ -386,13 +401,6 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="nbreLivr">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="580" y="480" width="70" height="30"/>
-        </Constraint>
-      </Constraints>
-    </Component>
     <Container class="javax.swing.JPanel" name="jPanel2">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -402,5 +410,12 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
     </Container>
+    <Component class="javax.swing.JLabel" name="nbreLivr">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="570" y="480" width="60" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
   </SubComponents>
 </Form>

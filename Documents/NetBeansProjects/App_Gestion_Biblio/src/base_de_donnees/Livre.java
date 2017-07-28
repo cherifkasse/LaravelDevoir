@@ -78,8 +78,8 @@ public class Livre extends javax.swing.JFrame {
         quiiter = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        nbreLivr = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
+        nbreLivr = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -125,6 +125,7 @@ public class Livre extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(12, 50, 770, 90);
 
+        ajouterLivre.setBackground(new java.awt.Color(66, 224, 240));
         ajouterLivre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         ajouterLivre.setText("Ajouter");
         ajouterLivre.addActionListener(new java.awt.event.ActionListener() {
@@ -135,6 +136,7 @@ public class Livre extends javax.swing.JFrame {
         getContentPane().add(ajouterLivre);
         ajouterLivre.setBounds(150, 190, 120, 30);
 
+        modifierLivre.setBackground(new java.awt.Color(66, 224, 240));
         modifierLivre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         modifierLivre.setText("Modifier");
         modifierLivre.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +147,7 @@ public class Livre extends javax.swing.JFrame {
         getContentPane().add(modifierLivre);
         modifierLivre.setBounds(270, 190, 120, 30);
 
+        supprimerLivre.setBackground(new java.awt.Color(66, 224, 240));
         supprimerLivre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         supprimerLivre.setText("Supprimer");
         supprimerLivre.addActionListener(new java.awt.event.ActionListener() {
@@ -155,6 +158,7 @@ public class Livre extends javax.swing.JFrame {
         getContentPane().add(supprimerLivre);
         supprimerLivre.setBounds(390, 190, 120, 30);
 
+        actualiserLivre.setBackground(new java.awt.Color(66, 224, 240));
         actualiserLivre.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         actualiserLivre.setText("Actualiser");
         actualiserLivre.addActionListener(new java.awt.event.ActionListener() {
@@ -191,6 +195,7 @@ public class Livre extends javax.swing.JFrame {
         getContentPane().add(txt_auteur);
         txt_auteur.setBounds(120, 380, 210, 30);
 
+        BoutonRechLivre.setBackground(new java.awt.Color(64, 218, 240));
         BoutonRechLivre.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         BoutonRechLivre.setText("Rchercher ");
         BoutonRechLivre.addActionListener(new java.awt.event.ActionListener() {
@@ -270,10 +275,10 @@ public class Livre extends javax.swing.JFrame {
         jLabel2.setText("Nbre Livres");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(440, 480, 130, 20);
-        getContentPane().add(nbreLivr);
-        nbreLivr.setBounds(580, 480, 70, 30);
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(0, 0, 100, 100);
+        jPanel2.setBounds(0, 0, 10, 10);
+        getContentPane().add(nbreLivr);
+        nbreLivr.setBounds(570, 480, 60, 30);
 
         setSize(new java.awt.Dimension(812, 656));
         setLocationRelativeTo(null);
@@ -469,7 +474,7 @@ public class Livre extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton modifierLivre;
-    private javax.swing.JTextField nbreLivr;
+    private javax.swing.JLabel nbreLivr;
     private javax.swing.JButton quiiter;
     private javax.swing.JButton supprimerLivre;
     private javax.swing.JTable tbl_livre;

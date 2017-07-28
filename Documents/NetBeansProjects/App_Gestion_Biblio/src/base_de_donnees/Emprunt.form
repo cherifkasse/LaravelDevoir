@@ -74,6 +74,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="ajouterEmp">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="de" red="30" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -90,6 +93,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="modifierEmp">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="de" red="30" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -106,6 +112,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="supprimerEmp">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="de" red="30" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -122,6 +131,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="actualiserEmp">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="de" red="30" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -211,6 +223,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="BoutonRechEmp">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="d3" red="36" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="11" style="1"/>
         </Property>
@@ -388,6 +403,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="rendre">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f0" green="de" red="30" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
@@ -431,13 +449,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="nbreEmp">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nbreEmpActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JLabel" name="nbreEmp">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="570" y="470" width="70" height="30"/>
+          <AbsoluteConstraints x="570" y="480" width="60" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
